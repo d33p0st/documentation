@@ -1,0 +1,40 @@
+name: Auto Update Top Project
+
+on:
+    schedule:
+        - cron: "0 0 * * *"
+
+jobs:
+    update-index:
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Checkout The Repository
+              uses: actions/checkout@v3
+            
+            - name: Setup python Environment
+              uses: actions/setup-python@v4
+              with:
+                python-version: 3.12
+            
+            - name: Install Dependencies
+              run: |
+                python -m pip install --upgrade pip
+                pip install requests
+            
+            - name: Update Markdown
+              run: python ./scripts/change_top.py
+              env:
+                PEPY_API: ${{ secrets.PEPY_API }}
+            
+            - name: Set GitHub Bot Access
+              run: | 
+                git config --global user.name "github-actions[bot]"
+                git config --global user.email "github-actions[bot]@users.noreply.github.com"
+            
+            - name: Commit and push
+              if: ${{ success() && (exitcode('git diff --exit-code -s') != 0) }}
+              run: |
+                git add index.markdown
+                git commit -m "Updated Top Project Badge"
+                git push
