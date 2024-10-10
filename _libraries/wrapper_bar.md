@@ -16,6 +16,5 @@ order: 1
 `Wrapper-Bar>=v0.1.5` supports wrapping file downloads.
 
 <span>{% include icon.liquid id='info-circle' %} <b>Info</b></span><br>
-
 `Wrapper-Bar >= 0.1.5` supports file download wrapping.
 {:.ui.info.message}
