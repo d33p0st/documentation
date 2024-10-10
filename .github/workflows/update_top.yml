@@ -5,6 +5,8 @@ on:
     #     - cron: "0 0 * * *"
     push
 
+permissions: write-all
+
 jobs:
     update-index:
         runs-on: ubuntu-latest
