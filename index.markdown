@@ -17,3 +17,6 @@ This website documents following categories of code.
 - [Libraries](https://d33p0st.in/documentation/#/libraries) of python.
 - [Crates](https://d33p0st.in/documentation/#/crates) of rust.
 - [Hackathons](https://d33p0st.in/documentation/#/hackathons).
+
+<span>{% include icon.liquid id='info-circle' %} <b>Info</b></span><br> This page automatically updates the `Top Project Badge` everyday at `12 AM UTC`.
+{:.ui.info.message}
