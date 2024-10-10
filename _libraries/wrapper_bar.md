@@ -261,7 +261,7 @@ Now we can perform the following tasks with it:
 
   - `width`: (float) type parameter. Set the width of the loading bar. Default is `50`.
 
-  - `chunk_size`: (int | None) type parameter. The chunk size to use for reading and writing data. If it is set to `None`, the data will be read in any size it is being downloaded.
+  - `chunk_size`: (int or None) type parameter. The chunk size to use for reading and writing data. If it is set to `None`, the data will be read in any size it is being downloaded.
 
   ```python
   # for downloading a file with a direct download link, these are the only parameters needed.
@@ -313,4 +313,4 @@ Submit your pull requests [here](https://github.com/d33p0st/wrapper-bar/pulls).
 
 ---
 
-[Go back](https://d33p0st.in/documentation) [HomePage](https://d33p0st.in)
+[Go back](https://d33p0st.in/documentation) -[HomePage](https://d33p0st.in)
