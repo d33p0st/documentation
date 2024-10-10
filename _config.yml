@@ -59,10 +59,10 @@ plugins:
 # default site settings
 # configure these values for your project
 project:
-  name: "Documentation"
-  owner: "d33pster"
-  repo: "https://github.com/d33p0st/documentation"
-  version: "v1.0"
+  name: Documentation
+  owner: d33pster
+  repo: https://github.com/d33p0st/documentation
+  version: 1.0
 
 collections:
   projects:
