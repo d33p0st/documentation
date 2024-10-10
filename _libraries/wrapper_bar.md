@@ -6,6 +6,7 @@ order: 1
 ---
 
 # {{ page.title }}
+{:.no_toc}
 
 <span> {% include icon.liquid id='info-circle' %} <b>Badges</b></span><br>
 ![PyPI - Version](https://img.shields.io/pypi/v/wrapper-bar)
@@ -19,7 +20,9 @@ order: 1
 `Wrapper-Bar >= 0.1.5` supports wrapping file downloads.
 {:.ui.info.message}
 
-- Table of Contents
+## Table of Contents
+- TOC
+{::options toc_levels="2,3" /}
 {:toc}
 
 ## Installation
