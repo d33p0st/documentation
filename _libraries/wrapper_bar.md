@@ -60,7 +60,7 @@ wrapControl = Wrapper()
 
 Now we can perform the following tasks with it:
 
-- Create a fake progress bar for aesthetics.
+- **Create a fake progress bar for aesthetics.**
 
   Use the `decoy` method. The `decoy` method has these parameters -- 
 
@@ -87,7 +87,7 @@ Now we can perform the following tasks with it:
   Loading |▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓|Elapsed Time: 0:00:50
   ```
 
-- Create a progress bar and run shell commands behind it.
+- **Create a progress bar and run shell commands behind it.**
 
   Use the `shellWrapper` method. The `shellWrapper` method has the following parameters --
 
@@ -134,3 +134,97 @@ Now we can perform the following tasks with it:
   ```console
   Shell Codes Running: |▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓|Elapsed Time: 0:00:10
   ```
+
+- **Create a progress bar and run python scripts behind it.**
+
+  Use the `pyWrapper` method. The `pyWrapper` method has the following parameters -- 
+
+  - `pythonscripts`: (List[str]) type parameter. Set the list of script names.
+
+  - `label`: (str) type parameter. Set the Label to be shown at the left of the loading bar.
+
+  - `delay`: (float) type parameter. Set the delay between each update of the loading bar.
+
+  - `width`: (float) type parameter. Set the width of the loading bar. Default is `50`.
+
+  - `timer`: (Literal[str]) type parameter. This can be either `ETA` or `ElapsedTime`. Default is `ETA`.
+
+  - `logger`: (bool) type parameter. Set it to `True` if the outputs need to be logged.
+
+  - `logfile`: (TextIOWrapper) type parameter. Set the log file ref if `logger` is set to `True`.
+
+  - `logfile_auto_close`: (bool) type parameter. Setting it to `True` will close the log file ref.
+
+  ```python
+  # let us take two different python scripts
+  pyscripts = [
+    'abc.py',
+    'xyz.py'
+  ]
+
+  # let us create a logfile ref
+  log_ref = open('log.logs', 'w+')
+
+  # now the progress bar
+  wrapControl.pyWrapper(
+    label='Processing'
+    pythonscripts=pyscripts,
+  )
+  ```
+
+  The will output the following:
+
+  ```console
+  Processing: |▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓|ETA: 0:00:00
+  ```
+
+- **create a progress bar and run python codes behind it that are dependent on the current script/project or just inline codes**
+
+  Use `pyShellWrapper` method. The `pyShellWrapper` has the following parameters --
+
+  - `pythoncodes`: (List[str]) type parameter. Set the actual processing codes here.
+
+  - `dependencies`: (List[str]) type parameter. All the dependencies to run any of the codes listed in `pythoncodes` goes here.
+
+  - `label`: (str) type parameter. Set the Label to be shown at the left of the loading bar.
+
+  - `delay`: (float) type parameter. Set the delay between each update of the loading bar.
+
+  - `width`: (float) type parameter. Set the width of the loading bar. Default is `50`.
+
+  - `timer`: (Literal[str]) type parameter. This can be either `ETA` or `ElapsedTime`. Default is `ETA`.
+
+  ```python
+  # let us take an example of simple addition
+  dependencies = [
+    """a, b, c = 10, 20, 15"""
+  ]
+  # dependencies will have all the values needed for operations
+  # follow python programming rules and indentation
+
+  pycodes = [
+    """a += b
+  b = a + c
+  d = a + b""",
+
+    """e = a + b"""
+  ]
+
+  # pycodes will have all the operation codes
+  # follow python programming rules and indentation
+
+  # now the loading bar
+  wrapControl.pyShellWrapper(
+    pythoncodes=pycodes,
+    dependencies=dependencies,
+    label='Processing',
+  )
+
+  # to get the results,
+  results: Dict[str, Any] = wrapControl.pyShellWrapperResults
+  # will contain values of 'a', 'b', 'c', 'd', 'e' after carrying out both the operations provided in the list
+  ```
+
+  This will again result in a progress bar as shown in above cases.
+
+- 
