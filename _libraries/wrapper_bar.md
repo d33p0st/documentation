@@ -237,17 +237,17 @@ Now we can perform the following tasks with it:
   - `link`: (str) type parameter. Set the link of the download.
   If you have the direct download link, put it there. It wont work with any other kind of link.
 
-  _If you are downloading from a github release, put the repository link here._
+    _If you are downloading from a github release, put the repository link here._
 
   - `download_to`: (str) type parameter. Set the destination directory, it should exist.
 
   - `download_filename`: (str) type parameter. It is optional to provide. If the link given is a direct download link, `download_filename` could be left empty, in which case, the program will try to resolve it from the link. However, if the name is not provided and it could not be resolved from the link, an Exception will be raised.
 
-  _If downloading from a github release, provide the name_
+    _If downloading from a github release, provide the name_
 
   - `type`: (Literal) type parameter. It takes only two values, `'direct'` and `'github_release'`. Set the type of link.
 
-  _If you want to download from a github release, use the repo link in the `link` parameter_.
+    _If you want to download from a github release, use the repo link in the `link` parameter_.
 
   - `github_release`: (str) type parameter. If you are downloading from a github release, set the version of the release here. If unsure, use `'latest'`. Defaults to `'latest'`. If direct link, ignore this param.
 
@@ -255,7 +255,7 @@ Now we can perform the following tasks with it:
 
   - `github_api_token`: (str) type parameter. This is optional and only needs to be set in case of private repository.
   
-  _Note that if you are setting `private_repo` param as `True` and at the same time, no `github_api_token` was provided, an Exception will be raised._
+    _Note that if you are setting `private_repo` param as `True` and at the same time, no `github_api_token` was provided, an Exception will be raised._
 
   - `label`: (str) type parameter. Set the Label to be shown at the left of the loading bar.
 
