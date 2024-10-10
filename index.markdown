@@ -1,6 +1,6 @@
 ---
-layout: doc
-permalink: /
+layout: page
+# permalink: /
 ---
 
 <!-- top badge -->

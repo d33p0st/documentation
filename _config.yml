@@ -22,17 +22,18 @@ title: Documentation
 email: deep.main.ac@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   This Page contains a list of all Projects that I have ever created.
-baseurl: "/documentation" # the subpath of your site, e.g. /blog
+# baseurl: "/documentation" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: jekyllrb
 github_username:  d33p0st
 
 # Build settings
 # theme: minima
-remote_theme: pages-themes/leap-day@v0.2.0
+remote_theme: pixeldroid/programming-pages
 plugins:
-  - jekyll-feed
+  # - jekyll-feed
   - jekyll-remote-theme
+  - jemoji
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -53,4 +54,26 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
-show_downloads: true
+
+---
+# default site settings
+# configure these values for your project
+project:
+  name: "Documentation"
+  owner: "d33pster"
+  repo: "https://github.com/d33p0st/documentation"
+  version: "v1.0"
+
+# collections:
+#   api:
+#     output: true
+#     permalink: "/:collection/:path/"
+#     title: API
+#     tab-order: 1
+
+highlighter: rouge
+kramdown:
+  footnote_backlink: "⮌"
+permalink: pretty
+sass:
+  style: compressed
