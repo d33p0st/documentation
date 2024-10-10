@@ -79,11 +79,11 @@ collections:
     permalink: "/:collection/:path"
     title: Crates (Rust)
     tab-order: 3
-  # hackathons:
-  #   output: true
-  #   permalink: "/:collection/:path"
-  #   title: Hackathons
-  #   tab-order: 4
+  hackathons:
+    output: true
+    permalink: "/:collection/:path"
+    title: Hackathons
+    tab-order: 4
 
 highlighter: rouge
 kramdown:
