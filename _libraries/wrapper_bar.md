@@ -62,7 +62,7 @@ Now we can perform the following tasks with it:
 
 - **Create a fake progress bar for aesthetics.**
 
-  Use the `decoy` method. The `decoy` method has these parameters -- 
+  Use the _decoy_ method. The _decoy_ method has these parameters -- 
 
   - `label`: (str) type parameter. Set the Label to be shown at the left of the loading bar.
 
@@ -227,4 +227,9 @@ Now we can perform the following tasks with it:
 
   This will again result in a progress bar as shown in above cases.
 
-- 
+<span> {% include icon.liquid id='exclamation-triangle' %} <b>Warning</b></span><br> Do not use keywords like return, yield, print or functions that use print, yield or return keywords, else they will mess up the loading bar.
+{:.ui.warning.message}
+
+- **Create a progress bar for downloading a file.** `>=v0.1.5`
+
+  Use `downloadWrapper` method. The `downloadWrapper` method has the following 
