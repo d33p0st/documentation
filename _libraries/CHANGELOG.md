@@ -17,6 +17,10 @@ order: -1
 
 ## Wrapper Bar
 
+**_`v0.1.7`_**
+
+- Fixed Issues with README
+
 **_`v0.1.6`_**
 
 - Added Support for `python 3.8`
