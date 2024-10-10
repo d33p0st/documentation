@@ -310,7 +310,3 @@ Now we can perform the following tasks with it:
 Submit any issues [here](https://github.com/d33p0st/wrapper-bar/issues).
 
 Submit your pull requests [here](https://github.com/d33p0st/wrapper-bar/pulls).
-
----
-
-[Go back](https://d33p0st.in/documentation) -[HomePage](https://d33p0st.in)
