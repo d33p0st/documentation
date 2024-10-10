@@ -62,7 +62,7 @@ Now we can perform the following tasks with it:
 
 - **Create a fake progress bar for aesthetics.**
 
-  Use the _decoy_ method. The _decoy_ method has these parameters -- 
+  Use the _`decoy`_ method. The _decoy_ method has these parameters -- 
 
   - `label`: (str) type parameter. Set the Label to be shown at the left of the loading bar.
 
@@ -89,7 +89,7 @@ Now we can perform the following tasks with it:
 
 - **Create a progress bar and run shell commands behind it.**
 
-  Use the `shellWrapper` method. The `shellWrapper` method has the following parameters --
+  Use the _shellWrapper_ method. The _shellWrapper_ method has the following parameters --
 
   - `shellcommands`: (List[str]) type parameter. Set the commands to be run in the shell in order. Create a list of string with each string representing a full single command.
 
@@ -137,7 +137,7 @@ Now we can perform the following tasks with it:
 
 - **Create a progress bar and run python scripts behind it.**
 
-  Use the `pyWrapper` method. The `pyWrapper` method has the following parameters -- 
+  Use the _pyWrapper_ method. The _pyWrapper_ method has the following parameters -- 
 
   - `pythonscripts`: (List[str]) type parameter. Set the list of script names.
 
@@ -180,7 +180,7 @@ Now we can perform the following tasks with it:
 
 - **create a progress bar and run python codes behind it that are dependent on the current script/project or just inline codes**
 
-  Use `pyShellWrapper` method. The `pyShellWrapper` has the following parameters --
+  Use _pyShellWrapper_ method. The _pyShellWrapper_ has the following parameters --
 
   - `pythoncodes`: (List[str]) type parameter. Set the actual processing codes here.
 
@@ -232,4 +232,85 @@ Now we can perform the following tasks with it:
 
 - **Create a progress bar for downloading a file.** `>=v0.1.5`
 
-  Use `downloadWrapper` method. The `downloadWrapper` method has the following 
+  Use _downloadWrapper_ method. The _downloadWrapper_ method has the following parameters --
+
+  - `link`: (str) type parameter. Set the link of the download.
+  If you have the direct download link, put it there. It wont work with any other kind of link.
+
+  _If you are downloading from a github release, put the repository link here._
+
+  - `download_to`: (str) type parameter. Set the destination directory, it should exist.
+
+  - `download_filename`: (str) type parameter. It is optional to provide. If the link given is a direct download link, `download_filename` could be left empty, in which case, the program will try to resolve it from the link. However, if the name is not provided and it could not be resolved from the link, an Exception will be raised.
+
+  _If downloading from a github release, provide the name_
+
+  - `type`: (Literal) type parameter. It takes only two values, `'direct'` and `'github_release'`. Set the type of link.
+
+  _If you want to download from a github release, use the repo link in the `link` parameter_.
+
+  - `github_release`: (str) type parameter. If you are downloading from a github release, set the version of the release here. If unsure, use `'latest'`. Defaults to `'latest'`. If direct link, ignore this param.
+
+  - `private_repo`: (bool) type parameter. If the repository is private, set it to `True`.
+
+  - `github_api_token`: (str) type parameter. This is optional and only needs to be set in case of private repository.
+  
+  _Note that if you are setting `private_repo` param as `True` and at the same time, no `github_api_token` was provided, an Exception will be raised._
+
+  - `label`: (str) type parameter. Set the Label to be shown at the left of the loading bar.
+
+  - `width`: (float) type parameter. Set the width of the loading bar. Default is `50`.
+
+  - `chunk_size`: (int | None) type parameter. The chunk size to use for reading and writing data. If it is set to `None`, the data will be read in any size it is being downloaded.
+
+  ```python
+  # for downloading a file with a direct download link, these are the only parameters needed.
+  wrapControl.downloadWrapper(
+    label = 'Downloading:',
+    link = "https://...",
+    download_to = "<download-dir>",
+    download_filename = 'file.zip',
+    type = 'direct'
+    width = 70,
+  )
+
+  # for github release.
+
+  ## PUBLIC RELEASE (PUBLIC REPOSITORY)
+  wrapControl.downloadWrapper(
+    label = 'Downloading:',
+    link = "https://github.com/d33pster/Friday", # public repo
+    download_to = "./friday", # this should exist
+    download_filename = 'bot.zip', # download bot.zip from some release of the repo
+    type = 'github_release',
+    github_release = 'latest', # download from the latest release
+    # or set it to v1.0 or v2.34.4, and so on.
+  )
+
+  ## PRIVATE RELEASE (PRIVATE REPOSITORY)
+  wrapControl.downloadWrapper(
+    label = 'Downloading:',
+    link = "https://github.com/d33p0st/some-private-repo", # private repo
+    download_to = "./some-dir", # should exist
+    download_filename = 'somefile.txt', # file to download
+    type = 'github_release',
+    github_release = 'latest',
+    private_repo = True,
+    github_api_token = '...', # your token
+    width = 100,
+  )
+  ```
+
+## Yanked Versions
+
+- `v0.1.2`
+
+## Issues
+
+Submit any issues [here](https://github.com/d33p0st/wrapper-bar/issues).
+
+Submit your pull requests [here](https://github.com/d33p0st/wrapper-bar/pulls).
+
+---
+
+[Go back](https://d33p0st.in/documentation) [HomePage](https://d33p0st.in)
