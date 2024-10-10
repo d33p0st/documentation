@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 
-from typing import Union, Tuple
+from typing import Union, Tuple, List
 import requests
 import sys
 import os
 
-PROJECTS = [
+PYTHON_PROJECTS = [
     'modstore',
     'friday-d33pster',
     'portlive',
@@ -25,10 +25,20 @@ PROJECTS = [
     'dynalistTk'
 ]
 
+RUST_PROJECTS = [
+    'argrust',
+    'detecteff',
+    'gcl',
+    'rustypath',
+    'termutils',
+    'xmenu'
+]
+
 class AutoChangeBadge:
-    def __init__(self, projects: list[str] = PROJECTS) -> None:
+    def __init__(self, pyprojects: List[str] = PYTHON_PROJECTS, rsprojects: List[str] = RUST_PROJECTS) -> None:
         self.api = 'https://api.pepy.tech/api/v2/projects/{}'
-        self.projects = projects
+        self.pyprojects = pyprojects
+        self.rsprojects = rsprojects
         self.found = None
 
     @property
@@ -45,14 +55,32 @@ class AutoChangeBadge:
             sys.exit(1)
         
         counter = 0
-        for p in self.projects:
+        # check python projects
+        print("Started Check for Python Projects. OK.")
+        for p in self.pyprojects:
             response_raw = requests.get(self.api.format(p), headers=headers)
             if response_raw.status_code == 200:
                 response = response_raw.json()
                 if response['total_downloads'] > downloads:
-                    top = response['id']
+                    top = p
                     downloads = response['total_downloads']
                     link = f'https://pypi.org/project/{p}'
+            print(f'checked {p}. OK.')
+            counter += 1
+        
+        # check rust projects
+        print("Started Check for Rust Projects. OK.")
+        for p in self.rsprojects:
+            url = f"https://crates.io/api/v1/crates/{p}"
+            response = requests.get(url)
+
+            if response.status_code == 200:
+                data = response.json()
+                if data["crate"]["downloads"] > downloads:
+                    top = p
+                    downloads = data["crate"]["downloads"]
+                    link = f'https://crates.io/crates/{p}'
+            
             print(f'checked {p}. OK.')
             counter += 1
         
