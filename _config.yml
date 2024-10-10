@@ -61,7 +61,7 @@ project:
   name: Documentation
   owner: d33p0st
   repo: https://github.com/d33p0st/documentation
-  version: 1.0
+  version: 1.0.0
 
 collections:
   projects:
@@ -79,11 +79,11 @@ collections:
     permalink: "/:collection/:path"
     title: Crates (Rust)
     tab-order: 3
-  hackathons:
-    output: true
-    permalink: "/:collection/:path"
-    title: Hackathons
-    tab-order: 4
+  # hackathons:
+  #   output: true
+  #   permalink: "/:collection/:path"
+  #   title: Hackathons
+  #   tab-order: 4
 
 highlighter: rouge
 kramdown:
