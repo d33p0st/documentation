@@ -18,14 +18,14 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Documentation
-email: deep.main.ac@gmail.com
-description: >- # this means to ignore newlines until "baseurl:"
-  This Page contains a list of all Projects that I have ever created.
-# baseurl: "/documentation" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-# twitter_username: jekyllrb
-github_username:  d33p0st
+# title: Documentation
+# email: deep.main.ac@gmail.com
+# description: >- # this means to ignore newlines until "baseurl:"
+#   This Page contains a list of all Projects that I have ever created.
+# # baseurl: "/documentation" # the subpath of your site, e.g. /blog
+# url: "" # the base hostname & protocol for your site, e.g. http://example.com
+# # twitter_username: jekyllrb
+# github_username:  d33p0st
 
 # Build settings
 # theme: minima
@@ -55,7 +55,6 @@ plugins:
 #   - vendor/gems/
 #   - vendor/ruby/
 
----
 # default site settings
 # configure these values for your project
 project:
