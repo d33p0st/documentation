@@ -33,7 +33,7 @@ jobs:
                 git config --global user.email "github-actions[bot]@users.noreply.github.com"
             
             - name: Commit and push
-              if: ${{ success() && (exitcode('git diff --exit-code -s') != 0) }}
+              if: ${{ success() }} && git diff --exit-code -s
               run: |
                 git add index.markdown
                 git commit -m "Updated Top Project Badge"
