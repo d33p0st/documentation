@@ -32,7 +32,7 @@ order: 1
 To install `wrapper-bar`, use pip.
 Open a terminal or CMD and run:
 
-```python
+```bash
 pip install wrapper-bar
 ```
 
