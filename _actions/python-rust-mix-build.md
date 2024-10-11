@@ -27,8 +27,8 @@ To use this in your own workflow,
 
 ```yaml
 - name: Run Build Test
-    uses: d33p0st/python-rust-mix-build@v1
-    with:
+  uses: d33p0st/python-rust-mix-build@v1
+  with:
     python-version: 3.9 # set python version. default: 3.12
     miniconda-version: # set miniconda version. default: "latest"
 ```
