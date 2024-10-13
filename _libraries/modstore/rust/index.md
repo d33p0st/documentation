@@ -1,4 +1,5 @@
 ---
 layout: page
-title: Rust Index
+title: Rust Powered Data Structures
+description: 
 ---

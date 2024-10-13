@@ -13,13 +13,13 @@ description: Actual Modstore Index Landing Page
 {:.ui.info.message}
 
 <p align='center'>
-    <a href='./algorithms/index.md'>Algorithms</a>
+    <a href='./algorithms/#libraries'>Algorithms</a>
     &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-    <a href='./rust/index.mdt'>Rust</a>
+    <a href='./rust/#libraries'>Rust</a>
     &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-    <a href='./builtins/index.md'>Built-ins</a>
+    <a href='./builtins/#libraries'>Built-ins</a>
     &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-    <a href='./new/index.md'>New</a>
+    <a href='./new/#libraries'>New</a>
 </p>
 
 # {{ page.title }}
@@ -35,13 +35,13 @@ description: Actual Modstore Index Landing Page
 
 **Categories**
 
-- [Algorithms](./algorithms/ "Algorithms provided under modstore")
+- [Algorithms](./algorithms/#libraries "Algorithms provided under modstore")
 
   `modstore` contains a hell lot of detailed algorithms.
 
   Currently available:
 
-  - [Searching](./algorithms/searching "Searching Algorithms")
+  - [Searching](./algorithms/searching/#libraries "Searching Algorithms")
     
     - Linear Search
     - Sentinel Linear Search
@@ -54,7 +54,7 @@ description: Actual Modstore Index Landing Page
     - Exponential Search
     - Fibonacci search
 
-  - [Sorting](./algorithms/sorting "Sorting Algorithms")
+  - [Sorting](./algorithms/sorting/#libraries "Sorting Algorithms")
 
     - Selection Sort
     - Bubble Sort
@@ -83,31 +83,31 @@ description: Actual Modstore Index Landing Page
     - Brick Sort
     - Three Way Merge Sort
 
-- [Rust powered data structures](./rust/ "Rust Index Page (modstore)")
+- [Rust powered data structures](./rust/#libraries "Rust Index Page (modstore)")
 
   `modstore` offers the following `rust` powered data structures:
 
-  - [BlockChain](./rust/#blockchain): Using Rust's performance, create tamper proof blockchain data structure of your required difficulty. Search through the blockchain and retrieve data in their original form as provided.
+  - [BlockChain](./rust#blockchain/#libraries): Using Rust's performance, create tamper proof blockchain data structure of your required difficulty. Search through the blockchain and retrieve data in their original form as provided.
 
-  - [DAG](./rust/#dag): Directed Acyclic Graphs are graphs with no cycles, used in certain blockchain variants like [IOTA](https://www.iota.org "IOTA Homepage"). Create, manipulate and store Network like data in DAG ledgers.
+  - [DAG](./rust#dag/#libraries): Directed Acyclic Graphs are graphs with no cycles, used in certain blockchain variants like [IOTA](https://www.iota.org "IOTA Homepage"). Create, manipulate and store Network like data in DAG ledgers.
 
-- [Upgraded Python built-ins](./builtins/)
+- [Upgraded Python built-ins](./builtins/#libraries)
 
   `modstore` has these upgraded built-ins:
 
   - [List]
 
-- [New Python data structures](./new/)
+- [New Python data structures](./new/#libraries)
 
   - [Stack]
   - [HashMap]
 
 <p align='center'>
-    <a href='./algorithms/index.md'>Algorithms</a>
+    <a href='./algorithms/#libraries'>Algorithms</a>
     &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-    <a href='./rust/index.mdt'>Rust</a>
+    <a href='./rust/#libraries'>Rust</a>
     &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-    <a href='./builtins/index.md'>Built-ins</a>
+    <a href='./builtins/#libraries'>Built-ins</a>
     &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-    <a href='./new/index.md'>New</a>
+    <a href='./new/#libraries'>New</a>
 </p>
