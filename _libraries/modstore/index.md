@@ -25,6 +25,7 @@ description: Actual Modstore Index Landing Page
 # {{ page.title }}
 
 `modstore` brings the speed python lacked while implementing complex data structures. Leveraging `Rust's` speed, `modstore` brings custom data structures to decrease processing time. Apart from that, `modstore` offers upgraded built-in data structures such as `list`, `dict`, `tuple` and a few new ones like `stack`.
+{:.larger.text}
 
 `modstore` started as a data structure library but now also contains algorithms such as sorting and searching.
 {:.larger.text}
