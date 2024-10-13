@@ -9,7 +9,7 @@ description: Actual Modstore Index Landing Page
 [![codecov](https://codecov.io/gh/d33p0st/modstore/branch/main/graph/badge.svg?token=P27ASL6TGH)](https://codecov.io/gh/d33p0st/modstore)
 [![Downloads](https://static.pepy.tech/badge/modstore)](https://pepy.tech/project/modstore)
 
-<span>{% include icon.liquid id='info-circle' %} <b>Important Note</b></span><br> This page exists as a stand-alone entity and to navigate through the pages of documentation of `modstore` use the navigation buttons given at the bottom of the page.
+<span>{% include icon.liquid id='info-circle' %} <b>Important Note</b></span><br> This page exists as a stand-alone entity and to navigate through the pages of documentation of `modstore` use the navigation buttons given at the top and bottom of the pages.
 {:.ui.info.message}
 
 <p align='center'>
@@ -35,13 +35,13 @@ description: Actual Modstore Index Landing Page
 
 **Categories**
 
-- [Algorithms](./algorithms/index.md "Algorithms provided under modstore")
+- [Algorithms](./algorithms/ "Algorithms provided under modstore")
 
   `modstore` contains a hell lot of detailed algorithms.
 
   Currently available:
 
-  - [Searching](./algorithms/searching.md "Searching Algorithms")
+  - [Searching](./algorithms/searching "Searching Algorithms")
     
     - Linear Search
     - Sentinel Linear Search
@@ -54,7 +54,7 @@ description: Actual Modstore Index Landing Page
     - Exponential Search
     - Fibonacci search
 
-  - [Sorting](./algorithms/sorting.md "Sorting Algorithms")
+  - [Sorting](./algorithms/sorting "Sorting Algorithms")
 
     - Selection Sort
     - Bubble Sort
@@ -83,21 +83,21 @@ description: Actual Modstore Index Landing Page
     - Brick Sort
     - Three Way Merge Sort
 
-- [Rust powered data structures](./rust/index.md)
+- [Rust powered data structures](./rust/ "Rust Index Page (modstore)")
 
   `modstore` offers the following `rust` powered data structures:
 
-  - [BlockChain]: Using Rust's performance, create tamper proof blockchain data structure of your required difficulty. Search through the blockchain and retrieve data in their original form as provided.
+  - [BlockChain](./rust/#blockchain): Using Rust's performance, create tamper proof blockchain data structure of your required difficulty. Search through the blockchain and retrieve data in their original form as provided.
 
-  - [DAG]: Directed Acyclic Graphs are graphs with no cycles, used in certain blockchain variants like [IOTA](https://www.iota.org). Create, manipulate and store Network like data in DAG ledgers.
+  - [DAG](./rust/#dag): Directed Acyclic Graphs are graphs with no cycles, used in certain blockchain variants like [IOTA](https://www.iota.org "IOTA Homepage"). Create, manipulate and store Network like data in DAG ledgers.
 
-- [Upgraded Python built-ins](./builtins/index.md)
+- [Upgraded Python built-ins](./builtins/)
 
   `modstore` has these upgraded built-ins:
 
   - [List]
 
-- [New Python data structures](./new/index.md)
+- [New Python data structures](./new/)
 
   - [Stack]
   - [HashMap]
