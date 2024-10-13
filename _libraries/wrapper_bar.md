@@ -5,14 +5,12 @@ description: Wrap actual commands behind a progress bar.
 order: 1
 ---
 
-# {{ page.title }}
-{:.no_toc}
-
-<span> {% include icon.liquid id='info-circle' %} <b>Badges</b></span><br>
 ![PyPI - Version](https://img.shields.io/pypi/v/wrapper-bar)
 ![PyPI - License](https://img.shields.io/pypi/l/wrapper-bar)
 [![Downloads](https://static.pepy.tech/badge/wrapper-bar)](https://pepy.tech/project/wrapper-bar)
-{:.ui.big.success.message}
+
+# {{ page.title }}
+{:.no_toc}
 
 `Wrapper-Bar` is a python module to help wrap commands behind a progress bar. `Wrapper-Bar` helps in wrapping shell commands, or python codes (both independent and dependent) and downloads with a progress bar and time.
 

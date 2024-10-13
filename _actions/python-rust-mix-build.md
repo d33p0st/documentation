@@ -5,12 +5,10 @@ description: A github action for build test for python-rust mix projects
 order: 1
 ---
 
+[![Dry Run](https://github.com/d33p0st/python-rust-mix-build/actions/workflows/test.yml/badge.svg)](https://github.com/d33p0st/python-rust-mix-build/actions/workflows/test.yml)
+
 # {{ page.title }}
 {:.no_toc}
-
-<span> {% include icon.liquid id='info-circle' %} <b>Badges</b></span><br>
-[![Dry Run](https://github.com/d33p0st/python-rust-mix-build/actions/workflows/test.yml/badge.svg)](https://github.com/d33p0st/python-rust-mix-build/actions/workflows/test.yml)
-{:.ui.big.success.message}
 
 `python-rust-mix-build` is a GitHub action that checks if the Python Rust Mix Project passes Build or not.
 

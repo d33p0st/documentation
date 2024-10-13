@@ -5,12 +5,10 @@ description: A straightforward no bullshit crate for managing paths in rust.
 order: 1
 ---
 
+![Crates.io Total Downloads](https://img.shields.io/crates/d/rustypath?style=flat&logoSize=auto&label=crates.io%20downloads)
+
 # {{ page.title }}
 {:.no_toc}
-
-<span> {% include icon.liquid id='info-circle' %} <b>Badges</b></span><br>
-![Crates.io Total Downloads](https://img.shields.io/crates/d/rustypath?style=flat&logoSize=auto&label=crates.io%20downloads)
-{:.ui.big.success.message}
 
 `rustypath` is a no bullshit crate for managing paths in rust. Single methods for carrying out tasks or checking something path related.
 
