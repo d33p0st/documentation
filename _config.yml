@@ -89,10 +89,6 @@ collections:
     permalink: "/:collection/:path"
     title: Hackathons
     tab-order: 5
-  modstore:
-    output: true
-    permalink: "/libraries/modstore"
-    title: modstore
 
 highlighter: rouge
 kramdown:
