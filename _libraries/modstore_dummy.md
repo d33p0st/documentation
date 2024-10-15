@@ -2,6 +2,7 @@
 layout: page
 title: Modstore
 description: Modstore Documentation Repository Redirect
+order: 1
 ---
 
 <html>

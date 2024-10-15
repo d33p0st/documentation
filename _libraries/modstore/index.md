@@ -84,13 +84,13 @@ description: Actual Modstore Index Landing Page
     - Brick Sort
     - Three Way Merge Sort
 
-- [Rust powered data structures](./rust/#libraries "Rust Index Page (modstore)")
+- [Rust powered data structures](./rust/#libraries "modstore's rust powered data structures")
 
   `modstore` offers the following `rust` powered data structures:
 
-  - [BlockChain](./rust#blockchain/#libraries): Using Rust's performance, create tamper proof blockchain data structure of your required difficulty. Search through the blockchain and retrieve data in their original form as provided.
+  - [BlockChain](./rust#blockchain-docs/#libraries "BlockChain Documentation"): Using Rust's performance, create tamper proof blockchain data structure of your required difficulty. Search through the blockchain and retrieve data in their original form as provided.
 
-  - [DAG](./rust#dag/#libraries): Directed Acyclic Graphs are graphs with no cycles, used in certain blockchain variants like [IOTA](https://www.iota.org "IOTA Homepage"). Create, manipulate and store Network like data in DAG ledgers.
+  - [DAG](./rust#dag-docs/#libraries "DAG Documentation"): Directed Acyclic Graphs are graphs with no cycles, used in certain blockchain variants like [IOTA](https://www.iota.org "IOTA Homepage"). Create, manipulate and store Network like data in DAG ledgers.
 
 - [Upgraded Python built-ins](./builtins/#libraries)
 
@@ -102,6 +102,27 @@ description: Actual Modstore Index Landing Page
 
   - [Stack]
   - [HashMap]
+
+## Install from scratch
+
+> Make sure you have cargo installed (Rust) and VS Build Tools for C++ (for windows)
+
+```bash
+git clone https://github.com/d33p0st/modstore.git
+python -m pip install --upgrade pip
+pip install maturin
+cd modstore
+maturin develop
+pip install .
+```
+
+## Issues
+
+Feel free to submit any issues with the BlockChain Class [here](https://github.com/d33p0st/modstore/issues).
+
+## Pull Requests
+
+Submit pull requests [here](https://github.com/d33p0st/modstore/pulls).
 
 <p align='center'>
     <a href='./algorithms/#libraries'>Algorithms</a>

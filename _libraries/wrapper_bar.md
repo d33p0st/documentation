@@ -2,7 +2,7 @@
 layout: page
 title: Wrapper Bar
 description: Wrap actual commands behind a progress bar.
-order: 1
+order: 2
 ---
 
 ![PyPI - Version](https://img.shields.io/pypi/v/wrapper-bar)
