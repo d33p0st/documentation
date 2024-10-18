@@ -88,9 +88,9 @@ description: Actual Modstore Index Landing Page
 
   `modstore` offers the following `rust` powered data structures:
 
-  - [BlockChain](./rust#blockchain-docs/#libraries "BlockChain Documentation"): Using Rust's performance, create tamper proof blockchain data structure of your required difficulty. Search through the blockchain and retrieve data in their original form as provided.
+  - [BlockChain](./rust#blockchain-docs "BlockChain Documentation"): Using Rust's performance, create tamper proof blockchain data structure of your required difficulty. Search through the blockchain and retrieve data in their original form as provided.
 
-  - [DAG](./rust#dag-docs/#libraries "DAG Documentation"): Directed Acyclic Graphs are graphs with no cycles, used in certain blockchain variants like [IOTA](https://www.iota.org "IOTA Homepage"). Create, manipulate and store Network like data in DAG ledgers.
+  - [DAG](./rust#dag-docs "DAG Documentation"): Directed Acyclic Graphs are graphs with no cycles, used in certain blockchain variants like [IOTA](https://www.iota.org "IOTA Homepage"). Create, manipulate and store Network like data in DAG ledgers.
 
 - [Upgraded Python built-ins](./builtins/#libraries)
 
