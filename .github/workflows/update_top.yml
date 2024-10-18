@@ -41,3 +41,16 @@ jobs:
                 git add index.markdown
                 git commit -m "Updated Top Project Badge"
                 git push
+              id: pushed_ec
+              continue-on-error: true
+
+            - name: Status
+              run: |
+                if [ "${{ steps.pushed_ec.outcome }}" == "failure" ]; then
+                    if [ $? -eq 1 ]; then
+                        echo "Nothing to Update this time."
+                    else
+                        exit 1
+                    fi
+                fi
+              
