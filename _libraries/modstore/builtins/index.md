@@ -13,9 +13,9 @@ description: The index page for modstore's upgraded built ins
 <p align='center'>
     <a href='../algorithms/#libraries'>Algorithms</a>
     &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-    <a href='../rust/#libraries'>Rust</a>
-    &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
     <a href='../new/#libraries'>New</a>
+    &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+    <a href='../rust/#libraries'>Rust</a>
     &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
     <a href='../#libraries'>Go back</a>
 </p>
