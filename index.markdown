@@ -4,7 +4,7 @@ layout: page
 
 <!-- top badge -->
 ![Top Project](https://img.shields.io/badge/Top%20Downloaded%20Project%20-%20pasta_man%20-%20Blue?link=https://pypi.org/project/pasta-man)
-![Top Project Download Count](https://img.shields.io/badge/Top%20Project%20Download%20Count%20-%209941%20-%20Blue?link=https://pypi.org/project/pasta-man)
+![Top Project Download Count](https://img.shields.io/badge/Top%20Project%20Download%20Count%20-%209947%20-%20Blue?link=https://pypi.org/project/pasta-man)
 
 # Overview
 
