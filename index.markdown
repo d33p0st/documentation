@@ -4,7 +4,7 @@ layout: page
 
 <!-- top badge -->
 ![Top Project](https://img.shields.io/badge/Top%20Downloaded%20Project%20-%20modstore%20-%20Blue?link=https://pypi.org/project/modstore)
-![Top Project Download Count](https://img.shields.io/badge/Top%20Project%20Download%20Count%20-%208816%20-%20Blue?link=https://pypi.org/project/modstore)
+![Top Project Download Count](https://img.shields.io/badge/Top%20Project%20Download%20Count%20-%208821%20-%20Blue?link=https://pypi.org/project/modstore)
 
 # Overview
 
