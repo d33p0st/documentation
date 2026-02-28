@@ -3,8 +3,8 @@ layout: page
 ---
 
 <!-- top badge -->
-![Top Project](https://img.shields.io/badge/Top%20Downloaded%20Project%20-%20rustypath%20-%20Blue?link=https://crates.io/crates/rustypath)
-![Top Project Download Count](https://img.shields.io/badge/Top%20Project%20Download%20Count%20-%209832%20-%20Blue?link=https://crates.io/crates/rustypath)
+![Top Project](https://img.shields.io/badge/Top%20Downloaded%20Project%20-%20modstore%20-%20Blue?link=https://pypi.org/project/modstore)
+![Top Project Download Count](https://img.shields.io/badge/Top%20Project%20Download%20Count%20-%2054550%20-%20Blue?link=https://pypi.org/project/modstore)
 
 # Overview
 
